@@ -1,0 +1,129 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/overpass-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* overpass-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/overpass-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  padding-top: 5rem;
+  background-color: black;
+  font-family: 'Overpass';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.container {
+  background-color: hsl(216, 12%, 8%);
+  max-width:24rem;
+  text-align: left;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.star {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+
+button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  font-weight: 700;
+  border: none;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+button.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+.submit {
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 2rem;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+
+
+.container2 {
+  background-color: hsl(216, 12%, 8%);
+  max-width: 20rem;
+  text-align: center;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.thanks {
+  height: 5rem;
+  width:fit-content;
+}
+
+.selection {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  padding: 4px;
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color:hsl(217, 12%, 63%);
+}
+
+
+.attribution {
+  background-color: hsla(300, 22%, 19%, 0.308);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 4rem;
+  padding: 0.5rem;
+  
+}
+
+.attribution a {
+  color: hsl(25, 97%, 53%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
